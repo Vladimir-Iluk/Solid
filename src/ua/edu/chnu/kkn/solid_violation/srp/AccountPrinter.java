@@ -6,11 +6,11 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 import static java.util.stream.Collectors.toCollection;
 
-public class StatementPrinter {
+public class AccountPrinter {
     private static final String STATEMENT_HEADER = "DATE | AMOUNT | BALANCE";
     private final Console console;
 
-    public StatementPrinter(Console console) {
+    public AccountPrinter(Console console) {
         this.console = console;
     }
 
