@@ -1,6 +1,6 @@
 package ua.edu.chnu.kkn.solid_violation.lsp;
 
-public class PetrolCar extends Vehicle {
+public class PetrolCar extends Vehicle implements  PetrolFiling {
   private static final int FUEL_TANK_FULL = 100;
   private int fuelTankLevel = 0;
 
@@ -9,10 +9,6 @@ public class PetrolCar extends Vehicle {
     this.fuelTankLevel = FUEL_TANK_FULL;
   }
 
-  @Override
-  public void chargeBattery() {
-    throw new UnsupportedOperationException("A petrol car cannot be recharged");
-  }
 
   public int fuelTankLevel() {
     return fuelTankLevel;

@@ -1,14 +1,10 @@
 package ua.edu.chnu.kkn.solid_violation.lsp;
 
-public class ElectricCar extends Vehicle{
+public class ElectricCar extends Vehicle implements  ChargeStation {
 
     private static final int BATTERY_FULL = 100;
     private int batteryLevel;
 
-    @Override
-    public void fillUpWithFuel() {
-        throw new UnsupportedOperationException("It's an electric car");
-    }
 
     @Override
     public void chargeBattery() {
