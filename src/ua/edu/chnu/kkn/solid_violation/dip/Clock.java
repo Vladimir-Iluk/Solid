@@ -2,8 +2,9 @@ package ua.edu.chnu.kkn.solid_violation.dip;
 
 import java.time.MonthDay;
 
-public class Clock {
-    public MonthDay monthDay(){
+public class Clock implements TimeProvider {
+    @Override
+    public MonthDay getCurrentMonthDay() {
         return MonthDay.now();
     }
 }
